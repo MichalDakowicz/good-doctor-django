@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Good Doctor</h1>
+
+        <p>Masz umówione {{ wizyty|length }} wizyty</p>
+
+        <h2>Lista twoich pacjętów</h2>
+        <ol>
+            {% for pacient in pacjenci %}
+            <li>{{ pacient.imie }} {{ pacient.nazwisko }}</li>
+            {% endfor %}
+        </ol>
+    </body>
+</html>
