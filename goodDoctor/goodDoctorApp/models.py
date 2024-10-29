@@ -4,7 +4,7 @@ from django.db import models
 class Pacjent(models.Model):
     nazwisko = models.CharField(max_length=50)
     imie = models.CharField(max_length=50)
-    miasto = models.CharField(max_length=50)
+    miasto = models.CharField(max_length=50, default="Białystok")
     ulica = models.CharField(max_length=50)
     wiek = models.IntegerField()
     
